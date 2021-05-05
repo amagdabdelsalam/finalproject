@@ -1,5 +1,5 @@
 import { _getQuestions, _getUsers } from '../_DATA'
-import { receiveQuestions } from './questions'
+import { receiveQuestions } from './questoins'
 import { receiveUsers } from './users'
 import { showLoading, hideLoading } from 'react-redux-loading'
 

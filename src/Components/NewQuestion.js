@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { handleAddQuestion } from '../Actions/questions'
+import { handleAddQuestion } from '../Actions/questoins'
 class NewQuestion extends Component {
     state = {
         optionOne: '',
@@ -19,12 +19,8 @@ class NewQuestion extends Component {
     handleNewQuestion = (e) => {
         e.preventDefault()
         const {dispatch, authedUser} = this.props
-        if (this.state.optionOne.trim().length > 0 && this.state.optionTwo.trim().length > 0) {
-            dispatch(handleAddQuestion(this.state.optionOne, this.state.optionTwo, authedUser))
-            this.props.history.push('/')
-        } else {
-            alert("plases full the two options")
-        }
+        dispatch(handleAddQuestion(this.state.optionOne, this.state.optionTwo, authedUser))
+        this.props.history.push('/')
     }
     render() {
         return (

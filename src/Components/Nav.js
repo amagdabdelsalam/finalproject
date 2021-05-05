@@ -15,10 +15,10 @@ class Nav extends Component {
 
                 <ul className="navbar-nav flex-row">
                     <li className="nav-item">
-                        <Link className="nav-link m-2" to='/add'>New Question</Link>
+                        <Link className="nav-link m-2" to='/new-question'>New Question</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link m-2" to='/leaderboard'>Leader Board</Link>
+                        <Link className="nav-link m-2" to='/leader-board'>Leader Board</Link>
                     </li>
                     {
                         authedUser !== null

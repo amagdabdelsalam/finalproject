@@ -16,7 +16,7 @@ class Question extends Component {
                     <div className='float-right w-75'>
                         <h4 className="card-title font-weight-light">Would you rather ?</h4>
                         <p className="card-text text-secondary">{`${optionOne.text} Or ${optionTwo.text}`}</p>
-                        <Link to={`/questions/${id}`} className="btn btn-primary float-right">View Poll</Link>
+                        <Link to={`/question/${id}`} className="btn btn-primary float-right">View Poll</Link>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { setAuthedUser } from '../Actions/authedUser'
-import { withRouter } from 'react-router-dom';
 
 class Signin extends Component {
     state = {
@@ -15,7 +14,6 @@ class Signin extends Component {
     login = (e) => {
         e.preventDefault()
         this.props.dispatch(setAuthedUser(this.state.id))
-        this.props.history.push('/')
     }
     render() {
         return (
@@ -41,4 +39,4 @@ class Signin extends Component {
     }
 }
 
-export default withRouter(connect()(Signin))
+export default connect()(Signin);
